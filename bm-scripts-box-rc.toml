@@ -1,0 +1,30 @@
+[bmscriptsbox.info]
+id = "ad01f372-43f3-40e0-b4f4-55399c293b1f"              
+name = "LocalSend"                                    
+desc = "LocalSend 一键启动脚本  |局域网文件传输 、免联网、跨平台 、离线传输方案。支持快捷键/右键桌面快速唤起,手机电脑互传文件加密直传"                                  
+version = "1.0.0"     
+icon = "./imgs/logo.png"                                   
+
+
+[bmscriptsbox.runtime]
+language = "bat"  
+language_version = ">=0.0.0"             
+entry = "main.cmd"                   
+terminal = "never"   
+binaries = [{name = "localsend"}]     
+
+[bmscriptsbox.triggers]
+[bmscriptsbox.triggers.context_menu]                   
+enabled = true                                 
+targets = ["background"]                        
+
+[bmscriptsbox.triggers.shortcut]                          
+enabled = true                                  
+input_type = ""                                 
+
+
+
+
+
+
+
